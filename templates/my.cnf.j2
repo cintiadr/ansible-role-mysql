@@ -11,6 +11,8 @@ bind-address = {{ mysql_bind_address }}
 datadir = {{ mysql_datadir }}
 socket = {{ mysql_socket }}
 pid-file = {{ mysql_pid_file }}
+character-set-server = utf8mb4
+collation-server = utf8mb4_unicode_ci
 {% if mysql_skip_name_resolve %}
 skip-name-resolve
 {% endif %}
